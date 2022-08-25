@@ -6,14 +6,25 @@
 
 
 	<servlet>
-		<servlet-name>abc</servlet-name>
+		<servlet-name>adding</servlet-name>
 		<servlet-class>com.drag.DemoServlet</servlet-class>
 	</servlet>
 	
 	
 	<servlet-mapping>
-		<servlet-name>abc</servlet-name>
+		<servlet-name>adding</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
 	
+	
+	<servlet>
+		<servlet-name>squaring</servlet-name>
+		<servlet-class>com.drag.SquareServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>squaring</servlet-name>
+		<url-pattern>/sq</url-pattern>
+	</servlet-mapping>
 </web-app>
