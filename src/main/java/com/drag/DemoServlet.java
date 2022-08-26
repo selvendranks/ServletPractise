@@ -24,13 +24,8 @@ public class DemoServlet extends HttpServlet {
 		//We can call the SquareServlet by two ways
 		//req Dispatcher and Redirect
 		
-		//passing k along with the req object
+		//Using sendRedirect
 		
-		req.setAttribute("k",k);
-		
-		//Using Request Dispatcher
-		
-		RequestDispatcher rd = req.getRequestDispatcher("sq");
-		rd.forward(req, res);
+		res.sendRedirect("sq?k="+k);
 	}
 }
